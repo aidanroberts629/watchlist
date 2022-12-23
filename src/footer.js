@@ -42,8 +42,8 @@ class Footer extends HTMLElement {
             <li><a href="https://aidanroberts.dev/" target="_blank" rel="noopener noreferrer">Portfolio</a></li>
           </ul>
           <ul class="socials">
-            <li><a href="https://www.linkedin.com/in/my-linkedin-profile" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/aidanroberts629" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/aidan-roberts/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/aidanroberts629/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
           </ul>
         </footer>
       `;
