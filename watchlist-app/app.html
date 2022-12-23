@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WatchList App</title>
+    <header-component></header-component>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/default-styles.css">
+
+    <!-- Linking Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sora">
+
+    <!-- Linking Web Components -->
+    <script src="src/header.js" type="text/javascript" defer></script>
+    <script src="src/footer.js" type="text/javascript" defer></script>
+    <script src="src/app.js" type="module" defer></script>
+    <script src="src/navbar.js" type="module" defer></script>
+
+    <style>
+        select#field-limit {
+            width: 2.5rem;
+        }
+        
+        h2.subtitle {
+            font-family: 'Underdog', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <app-navbar></app-navbar>
+
+
+    <!-- Main Page -->
+    <main class="px-1 py-1">
+        <div class="has-background-info mr-1 p-1">
+            <div class="is-large p-4">
+                <!-- Row #1 -->
+                <div class="title has-text-light">WatchList App</div>
+
+                <!-- Row #2 - Instructions -->
+                <div id="app-content" class="box mt-2">
+                    <p class="mb-5">
+                        - Select a media type to view options, and use filters to sort your displayed results.<br> - Search for a specific term or phrase and view results for both Movies and TV simultaneously. <br> - Go between pages of results seamlessly,
+                        or clear the results on your page.<br> - Add media to your Favorites with the click of a button!
+                    </p>
+
+                    <!-- Row #2 - Controls -->
+                    <div id="box-controls" class="box">
+                        <div class="control is-inline-block mr-3">
+                            <span class="title has-text-weight-bold">Search By:</span><br><br>
+                            <span class="subtitle has-text-weight-bold">Media Type:</span>
+                            <select id="field-media" class="select is-primary is-small">
+                                <option>Movies</option>
+                                <option>TV</option>
+                            </select>
+                        </div>
+
+                        <div class="control is-inline-block">
+                            <span class="subtitle has-text-weight-bold">Filter By:</span>
+                            <select id="field-filter-by" class="select is-primary is-small">
+                                <option>Popular</option>
+                                <option>Top Rated</option>
+                            </select>
+                        </div>
+
+                        <div class="control is-inline-block ml-6">
+                            <button id="btn-search" class="button is-primary is-small" title="Search for media!">
+                                Search!
+                            </button>
+                        </div>
+
+                        <div class="control is-inline-block ml-6">
+                            <button id="btn-next-page" class="button is-info is-small" title="Next Page!">
+                                Next Page
+                            </button>
+                        </div>
+                        <div class="control is-inline-block ml-6">
+                            <button id="btn-prev-page" class="button is-info is-small" title="Previous Page!">
+                                Previous Page
+                            </button>
+                        </div>
+                        <div class="control is-inline-block ml-6">
+                            <button id="btn-clear-all" class="button is-warning is-small" title="Clear all results!">
+                                Clear
+                            </button>
+                        </div>
+
+                        <br><br>
+                        <span class="subtitle has-text-weight-bold">OR:</span>
+                        <br><br>
+                        <div class="control is-inline-block mr-3">
+                            <span class="subtitle has-text-weight-bold">Search Term:</span>
+                            <input id="input-search" class="input" type="text" placeholder="Search Movies/TV!">
+                            <br> <br>
+                            <button id="btn-input-search" class="button is-primary is-small" title="Search for media!">
+                                Search!
+                            </button>
+                            <div class="control is-inline-block ml-6">
+                                <button id="search-btn-next-page" class="button is-info is-small" title="Next Page!">
+                                    Next Page
+                                </button>
+                            </div>
+                            <div class="control is-inline-block ml-6">
+                                <button id="search-btn-prev-page" class="button is-info is-small" title="Previous Page!">
+                                    Previous Page
+                                </button>
+                            </div>
+                            <div class="control is-inline-block ml-6">
+                                <button id="btn-clear-all-2" class="button is-warning is-small" title="Clear all results!">
+                                    Clear
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Row #3 - Results -->
+                <div id="app-results" class="box">
+                    <div class="is-large p-1">
+                        <h2 class="subtitle has-text-weight-bold mb-2 mt-0 has-text-light">My Results</h2>
+                        <p id="element-status" class="has-text-warning mb-2">Click the <b>Search</b> button to view media results!</p>
+                        <div id="element-card-holder">
+                            <!-- Search results go here! -->
+                            <img src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs%3D" id="spinner" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer-component></footer-component>
+</body>
+
+</html>

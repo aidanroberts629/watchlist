@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+* {
+    font-family: Sora;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+html {
+    background-color: #3e8ed0;
+}
+
+.navbar-menu,
+.navbar-item,
+.navbar-brand {
+    background-color: #0d253f;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+    background-color: #C9D6EA;
+    box-shadow: 0 25px 20px 0px rgba(0, 0, 0, .4);
+    color: rgb(21, 21, 80);
+    text-align: center;
+}
+
+#element-card-holder {
+    margin: 0 auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px 20px;
+}
+
+#app-content {
+    background-color: #0d253f;
+    color: white;
+}
+
+#box-controls {
+    background-color: #3850b7;
+}
+
+#input-search {
+    background-color: lightgray;
+}
+
+.subtitle {
+    color: lightgray;
+}
+
+#fav-instructions {
+    color: lightgray;
+}
+
+#app-results {
+    background-color: #3850b7;
+}
+
+#fav-instructions,
+#fav-list {
+    background-color: #3850b7;
+}
+
+li,
+#home-text {
+    color: lightgray;
+}
+
+.title {
+    color: darkgray;
+}
+
+#btn-clear-favorites {
+    margin-left: 1.25em;
+}
+
+#btn-favorite {
+    width: 75%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1080px) {
+    .control {
+        margin: 15px;
+    }
+}
