@@ -15,6 +15,9 @@ class Footer extends HTMLElement {
             justify-content: space-between;
             align-items: center;
             background-color: #0d253f;
+            position: absolute;
+            bottom: 0;
+            
           }
           
           ul li {
@@ -43,7 +46,7 @@ class Footer extends HTMLElement {
           </ul>
           <ul class="socials">
             <li><a href="https://www.linkedin.com/in/aidan-roberts/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/aidanroberts629/" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://github.com/aidanroberts629" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
           </ul>
         </footer>
       `;
