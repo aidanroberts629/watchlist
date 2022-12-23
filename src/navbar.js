@@ -14,7 +14,7 @@ template.innerHTML = `
 
 <nav class="navbar has-shadow is-white">
         <div class="navbar-brand">
-            <a class="navbar-item" href="home.html">
+            <a class="navbar-item" href="index.html">
                 <i class="fas fa-solid fa-film"></i>
             </a>
             <a class="navbar-burger" id="burger">
@@ -27,7 +27,7 @@ template.innerHTML = `
 
         <div class="navbar-menu" id="nav-links">
             <div class="navbar-start">
-                <a class="navbar-item has-text-white" href="home.html">
+                <a class="navbar-item has-text-white" href="index.html">
                     Home
                 </a>
 
