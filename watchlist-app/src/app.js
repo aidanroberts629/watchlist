@@ -236,3 +236,16 @@ function favoriteMedia(title) {
         storage.addFavorite(newFavorite);
     }
 }
+
+// functionality for hitting "enter" instead of clicking button
+let inputField = document.querySelector("#input-search");
+
+inputField.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.querySelector("#btn-input-search").click();
+  }
+});
