@@ -15,8 +15,18 @@ class Footer extends HTMLElement {
             justify-content: space-between;
             align-items: center;
             background-color: #0d253f;
+            background-repeat: repeat;
+            background-attachment: scroll;
             position: absolute;
             bottom: 0;
+
+            background-image: none;
+            background-repeat: repeat;
+            background-attachment: scroll;
+            background-position: 0% 0%;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
             
           }
           
