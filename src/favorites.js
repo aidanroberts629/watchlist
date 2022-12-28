@@ -10,7 +10,7 @@ const showFavorites = () => {
     console.log(storage.getFavorites());
 
     if (favorites.length > 0)
-        status.innerHTML = "Here are your favorites";
+        status.innerHTML = "Here is what you have saved:";
 
     for (let i = 0; i < favorites.length; i++) {
         let result = favorites[i];

@@ -15,15 +15,19 @@ template.innerHTML = `
     width: 75%;
     margin: auto;
 }
+#title {
+    padding: 2px;
+}
 </style>
+
 <div class='result'>
 <h1><i id="item-num"></i></h1>
 <b>Title:</b>
-            <span id="title">???</span>
+    <span id="title">???</span>
 <b>Release Date:</b>
-<span id="date">???</span>
+    <span id="date">???</span>
 <button id="btn-favorite" class="button is-info" title="Add to Favorites!">Favorite!</button>
-<br></div>
+</div>
 
 <div class="card-content">
     <div class="card-image">
